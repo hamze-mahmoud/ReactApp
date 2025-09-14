@@ -25,7 +25,7 @@ export default function Main(){
         DENTEX اهلاً بكم في شركة
       </h1>
 
-      {/* Paragraph */}
+     
       <p className="absolute top-[35%] left-[-400px] w-[700px] text-[18px] leading-[30px] font-bold text-gray-700">
         التسويق الإلكتروني ‏: ويعرف أيضا باسم التسويق الرقمي ‏ أو التسويق عبر
         الشبكة ‏ أو، ويشمل جميع الأساليب والممارسات ذات الصلة بعالم التسويق عبر
