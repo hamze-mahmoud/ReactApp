@@ -1,0 +1,17 @@
+
+.link-item {
+    position: relative;
+  }
+  
+  .link-item::before {
+    content: '';
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;      /* thickness of the line */
+    height: 100%;     /* length of the line */
+    background-color:rgb(182, 185, 186);
+
+  }
+  
