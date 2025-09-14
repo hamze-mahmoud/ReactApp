@@ -21,7 +21,6 @@ export default function Main(){
 </div>
 
 <div className="relative w-[1000px] h-[600px] bg-cover bg-center">
-      {/* Heading */}
       <h1 className="absolute top-[20%] left-[-400px] w-[700px] text-[#033B8C] font-bold text-[55px]">
         DENTEX اهلاً بكم في شركة
       </h1>
@@ -36,7 +35,6 @@ export default function Main(){
         عبر الإنترنت، وتحسين التجارة الإلكترونية. التسويق الإلكتروني ‏
       </p>
 
-      {/* Call to action */}
       <div>
         
       </div>
@@ -46,9 +44,7 @@ export default function Main(){
         قم بالاتصال الان
       </button>
 
-      {/* Social Icons */}
       <div className="absolute top-[70%] right-0 flex gap-6 text-[34px]">
-  {/* Facebook */}
   <a
     href="https://facebook.com"
     target="_blank"
@@ -58,7 +54,6 @@ export default function Main(){
     <FaFacebookF />
   </a>
 
-  {/* WhatsApp */}
   <a
     href="https://wa.me/1234567890"
     target="_blank"

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-[#033885] shadow-md" style={{height:'97px'}}>
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-         {/* Actions */}
+        
          <div className="flex items-center space-x-2">
           <button className="bg-white text-[#033885] px-3 py-1 rounded-md hover:bg-gray-100 transition">
             العربية
@@ -15,7 +15,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Navigation */}
         <nav>
           <ul className="flex items-center space-x-6 text-white font-medium">
             <li className="text-gray-300   w-23"><Link to="/about">نبذة عنا</Link></li>
