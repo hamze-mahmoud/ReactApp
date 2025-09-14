@@ -1,12 +1,27 @@
 import "./Main.css"
 import hamzeImage from '../Imgaes/hamze.jpg';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import image from '../Imgaes/gg.png'
 import image2 from './tt.png'
 import { FaFacebookF, FaWhatsapp,FaInstagram  } from "react-icons/fa";
-
+import linearGrad from './vv.png'
+import Cards from "../Cards/Cards";
 export default function Main(){
+    const [currentSlide,setCurrentSlide]=useState(0);
+    const [pixels,setPixels]=useState(600);
+
+    const [currentImage,setCurrentImage]=useState(false)
+    useEffect(()=>{
+        const interval= setInterval(()=>{
+           setCurrentSlide((prevSlide) => (prevSlide + 1) % 4);
+           setCurrentImage(false)
+         },5000)
+         return () => clearInterval(interval); // Clean up the interval on component unmount
+       
+       },[])
     return(
+        <div>
+
         <div className="flex  justify-between mt-0">
             <div>
 
@@ -87,6 +102,27 @@ export default function Main(){
 
 
       </div>
+      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+
+      
+<div className="w-full text-center mt-0 text-[40px] text-bold" style={{color:'#003570',lineHeight:'36px',fontStyle:'italic',fontWeight:'bold'}}>  افضل البائعين لدينا </div>
+<div>
+<img src={linearGrad} style={{width :'242.37',height:'8.27'}} />
+</div>
+</div>
+
+
+<div className="slider2">
+      <div className="slide-images"  style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+      </div>
+    </div>
+    
+      </div>
+
     )
 
 
